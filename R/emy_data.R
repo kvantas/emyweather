@@ -9,17 +9,17 @@
 #' \describe{
 #'   \item{date}{the observation's date}
 #'   \item{station_id}{Greek National Meteorological Service station ID}
-#'   \item{pressure}{Pressure (hPa)}
-#'   \item{dry_temp}{Dry temperature (degrees C)}
-#'   \item{wet_temp}{Wet temperature (degrees C)}
-#'   \item{max_temp}{Maximum temperature (degrees C)}
-#'   \item{min_temp}{Minimum temperature (degrees C)}
-#'   \item{rel_humidity}{Relative humidity (\%)}
-#'   \item{wind_direction}{Wind direction (degrees)}
-#'   \item{wind_force_knot}{Wind force (knots)}
-#'   \item{visibility}{Visibility (km)}
-#'   \item{total_cloud_amount}{Total cloud amount (-)}
-#'   \item{precipitation}{Precipitation height (mm)}
+#'   \item{pressure}{Pressure, in hPa}
+#'   \item{dry_temp}{Dry temperature, in degree Celsius}
+#'   \item{wet_temp}{Wet temperature, in degree Celsius}
+#'   \item{max_temp}{Maximum temperature, in degree Celsius}
+#'   \item{min_temp}{Minimum temperature, in degree Celsius}
+#'   \item{rel_humidity}{Relative humidity, in percent}
+#'   \item{wind_direction}{Wind direction, in degrees}
+#'   \item{wind_force_knot}{Wind force, in knots}
+#'   \item{visibility}{Visibility, in km}
+#'   \item{total_cloud_amount}{Total cloud amount, in values 0 to 9}
+#'   \item{precipitation}{Precipitation height, in mm}
 #' }
 #' @source \url{http://www.emy.gr/}
 "emy_data"

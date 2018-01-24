@@ -19,7 +19,7 @@ The climatic data are taken from the Greek National Meteorological Service
 and come from 21 weather stations, with a time step of 3 hours. The time
 period is from 1975 to 2004. The variables are: air pressure, temperature
 (dry, wet, max and min), relative humidity, wind (direction and speed),
-visibility, total cloud amount and precipitation. These time series are not
+visibility, total cloud amount and precipitation. These time series were not
 checked for consistency or errors.
 }
 
