@@ -1,0 +1,46 @@
+---
+title: "National Meteorological Service Dataset"
+author: "Konstantinos Vantas"
+date: "`r Sys.Date()`"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Vignette Title}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r setup, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+With this vignette the raw data that have been downloaded from www.emy.gr are transformed from a list of csv files to a tidy data frame, using the function `emy_create`.
+```{r emy_data_create}
+# the data from emy are downloaded to the folder ./raw-data/emy the following
+# command will create a list of directories created in that folder
+dir_names <- list.files('./emy', full.names = TRUE)
+
+# these directories have the raw data from every station
+dir_names
+```
+
+The following code will create a data frame with the available meteorological data. 
+
+```{r emy_data_frame}
+source(file = "./emy_create.R")
+emy_data <- emy_create(dir_names)
+```
+
+The variables in the created data frame are:
+```{r emy_df_names}
+names(emy_data)
+```
+
+and some basic statistic values:
+```{r emy_stats}
+summary(emy_data)
+```
+
+Before the use of these data the cleaning from errors is a necessity. The maximum precipitation of 555  mm is obviously an error. 
