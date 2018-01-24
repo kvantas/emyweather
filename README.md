@@ -11,14 +11,16 @@ Status](https://ci.appveyor.com/api/projects/status/github/kvantas/emyweather?br
 version](https://img.shields.io/badge/R%3E%3D-3.4.0-6666ff.svg)](https://cran.r-project.org/)
 [![packageversion](https://img.shields.io/badge/Package%20version-0.1.0-orange.svg?style=flat-square)](https://github.com/kvantas/emyweather)
 
+This package contains climatic data from the Greek National
+Meteorological Service, as well as a number of useful other related data
+sets.
+
 The climatic data are taken from the Greek National Meteorological
 Service and come from 21 weather stations, with a time step of 3 hours.
-The time period is from 1975 to 2004.
-
-The variables are: air pressure, temperature (dry, wet, max and min),
-relative humidity, wind (direction and speed), visibility, total cloud
-amount and precipitation. These time series are not checked for
-consistency or errors.
+The time period is from 1975 to 2004. The variables are: air pressure,
+temperature (dry, wet, max and min), relative humidity, wind (direction
+and speed), visibility, total cloud amount and precipitation. These time
+series are not checked for consistency or errors.
 
 ## Data sources
 
