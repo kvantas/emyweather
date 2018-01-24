@@ -1,5 +1,5 @@
 
-#' Create National Meteorological Service Dataset
+#' Greek National Meteorological Service Dataset
 #'
 #' \code{emy_create} uses as input a list of directories. Each directory is a
 #' station and the files in it are the open data, csv files, from www.emy.gr.
