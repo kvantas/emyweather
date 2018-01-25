@@ -1,6 +1,8 @@
-# emyweather 0.1.0
+# emyweather 0.1.0 (Release date: 2018-01-25)
 
-* Added Climatic data from Greek National Meteorological Service.
+--------------------------------------------------------------------------------
+
+* Initial submission to CRAN.
 
 
 

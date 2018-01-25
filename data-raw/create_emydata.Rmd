@@ -43,4 +43,4 @@ and some basic statistic values:
 summary(emy_data)
 ```
 
-Before the use of these data the cleaning from errors is a necessity. The maximum precipitation of 555  mm is obviously an error. 
+Before the use of these data the cleaning from errors is a necessity. The maximum precipitation of 555  mm is obviously an error or a code. 

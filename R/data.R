@@ -27,8 +27,8 @@
 #' Greek National Meteorological Service Stations
 #'
 #' The stations' data are taken from the Greek National Data Bank for
-#' Hydrological and Meteorological Information, Hydroscope. This data frame
-#' has the stations' id, coordinates, altitude and water division.
+#' Hydrological and Meteorological Information, Hydroscope. The variables are:
+#' stations' id, coordinates, altitude and water division.
 #'
 #' @format A data frame with 21 rows and 7 variables:
 #' \describe{
@@ -42,3 +42,22 @@
 #' }
 #' @source \url{http://www.hydroscope.gr/}
 "emy_stations"
+
+
+#' Greek borders
+#'
+#' The borders of Greece are taken from Geoadata.gov.gr.  The variables are
+#' created using the function tidy from the broom package. This data frame
+#' was created for use with the geom_polygon from ggplot2 package.
+#'
+#' @format A data frame with 18474 rows and 8 variables:
+#' \describe{
+#'   \item{long}{Longitude in decimal degrees, ETRS89}
+#'   \item{lat}{Latitude in decimal degrees, ETRS89}
+#'   \item{order}{order, integer}
+#'   \item{hole}{hole, boolean}
+#'   \item{piece}{piece, integer}
+#'   \item{group}{group, numeric}
+#' }
+#' @source \url{http://geodata.gov.gr/}
+"borders"

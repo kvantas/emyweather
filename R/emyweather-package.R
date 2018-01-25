@@ -13,9 +13,17 @@
 #' visibility, total cloud amount and precipitation. These time series were not
 #' checked for consistency or errors.
 #'
+#' @section Stations:
+#'
+#' The stations' data are taken from the Greek National Data Bank for
+#' Hydrological and Meteorological Information, Hydroscope. The variables are:
+#' stations' id, coordinates, altitude and water division.
+#'
 #' @section Data Sources:
 #'
-#' The data are retrieved from http://www.meteo.gr/
+#' The data are retrieved from:
+#'  \url{http://www.meteo.gr/}
+#'  \url{http://www.hydroscope.gr/}
 #'
 #' @name emyweather
 #' @aliases emyweather-package
