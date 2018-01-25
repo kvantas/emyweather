@@ -7,7 +7,7 @@
 #'
 #' @format A data frame with 1679308 rows and 13 variables:
 #' \describe{
-#'   \item{date}{the observation's date}
+#'   \item{date}{The observation's date}
 #'   \item{station_id}{Greek National Meteorological Service station ID}
 #'   \item{pressure}{Pressure, in hPa}
 #'   \item{dry_temp}{Dry temperature, in degree Celsius}
@@ -23,3 +23,22 @@
 #' }
 #' @source \url{http://www.emy.gr/}
 "emy_data"
+
+#' Greek National Meteorological Service Stations
+#'
+#' The stations' data are taken from the Greek National Data Bank for
+#' Hydrological and Meteorological Information, Hydroscope. This data frame
+#' has the stations' id, coordinates, altitude and water division.
+#'
+#' @format A data frame with 21 rows and 7 variables:
+#' \describe{
+#'   \item{name}{The station's name}
+#'   \item{station_id}{Greek National Meteorological Service station ID}
+#'   \item{hydroscope_id}{The station's ID from kyy.hydroscope.gr database}
+#'   \item{water_division}{The station's Water Division}
+#'   \item{longitude}{The station's longitude in decimal degrees, ETRS89}
+#'   \item{latitude}{The station's latitude in decimal degrees, ETRS89}
+#'   \item{altitude}{The station's altitude, meters above sea level}
+#' }
+#' @source \url{http://www.hydroscope.gr/}
+"emy_stations"
