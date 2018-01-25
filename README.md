@@ -16,11 +16,14 @@ Meteorological Service, as well as a number of useful other related data
 sets.
 
 The climatic data come from 21 weather stations, with a time step of 3
-hours. The time period is from 1975 to 2004. ![“Stations
-location”](./man/figures/stations_map.png) The variables are: air
-pressure, temperature (dry, wet, max and min), relative humidity, wind
-(direction and speed), visibility, total cloud amount and precipitation.
-These time series are not checked for consistency or errors.
+hours. The time period is from 1975 to 2004.
+
+![“Stations location”](./man/figures/stations_map.png)
+
+The variables are: air pressure, temperature (dry, wet, max and min),
+relative humidity, wind (direction and speed), visibility, total cloud
+amount and precipitation. These time series are not checked for
+consistency or errors.
 
 ## Data sources
 
