@@ -10,6 +10,7 @@ Status](https://ci.appveyor.com/api/projects/status/github/kvantas/emyweather?br
 [![minimal R
 version](https://img.shields.io/badge/R%3E%3D-3.4.0-6666ff.svg)](https://cran.r-project.org/)
 [![packageversion](https://img.shields.io/badge/Package%20version-0.1.0-orange.svg?style=flat-square)](https://github.com/kvantas/emyweather)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.1159500.svg)](https://doi.org/10.5281/zenodo.1159500)
 
 This package contains climatic data from the Greek National
 Meteorological Service, as well as a number of useful other related data

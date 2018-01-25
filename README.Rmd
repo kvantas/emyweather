@@ -18,6 +18,8 @@ knitr::opts_chunk$set(
 [![AppVeyor Build Status](https://ci.appveyor.com/api/projects/status/github/kvantas/emyweather?branch=master&svg=true)](https://ci.appveyor.com/project/kvantas/emyweather)
 [![minimal R version](https://img.shields.io/badge/R%3E%3D-3.4.0-6666ff.svg)](https://cran.r-project.org/)
 [![packageversion](https://img.shields.io/badge/Package%20version-0.1.0-orange.svg?style=flat-square)](https://github.com/kvantas/emyweather)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.1159500.svg)](https://doi.org/10.5281/zenodo.1159500)
+
 
 This package contains climatic data from the Greek National  Meteorological Service, as well as a number of useful other related data  sets.
 
@@ -56,16 +58,17 @@ This package contains three data sets:
     + All data are from the open data sources in http://www.emy.gr/.
 * To cite `emyweather`, please use:
   ```
-  Konstantinos Vantas (2018). emyweather: National Meteorological Service Climatic Data, R package version 0.1.0, URL https://github.com/kvantas/emyweather
+  Konstantinos Vantas (2018). emyweather: National Meteorological Service Climatic Data, R package version 0.1.0, URL https://github.com/kvantas/emyweather, DOI http://doi.org/10.5281/zenodo.1159500
   ```
   A BibTeX entry for LaTeX users is
   ```
    @Manual{,
-    title = {emyweather: National Meteorological Service Climatic Data},
+    title  = {emyweather: National Meteorological Service Climatic Data},
     author = {Konstantinos Vantas},
-    year = {2018},
-    note = {R package version 0.1.0},
-    url = {https://github.com/kvantas/emyweather},
+    year   = {2018},
+    note   = {R package version 0.1.0},
+    doi    = {10.5281/zenodo.1159500},
+    url    = {https://github.com/kvantas/emyweather},
   }
   ```
 * Please note that this project is released with a [Contributor Code of Conduct](/CONDUCT.md). By participating in this project you agree to abide by its terms.
