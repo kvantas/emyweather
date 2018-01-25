@@ -22,7 +22,7 @@ emy_stations
 }
 \description{
 The stations' data are taken from the Greek National Data Bank for
-Hydrological and Meteorological Information, Hydroscope. This data frame
-has the stations' id, coordinates, altitude and water division.
+Hydrological and Meteorological Information, Hydroscope. The variables are:
+stations' id, coordinates, altitude and water division.
 }
 \keyword{datasets}
