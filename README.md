@@ -19,7 +19,7 @@ sets.
 The climatic data come from 21 weather stations, with a time step of 3
 hours. The time period is from 1975 to 2004.
 
-![“Stations location”](./man/figures/stations_map.png)
+![](./man/figures/stations_map.png)
 
 The variables are: air pressure, temperature (dry, wet, max and min),
 relative humidity, wind (direction and speed), visibility, total cloud
@@ -60,17 +60,18 @@ This package contains three data sets:
   - To cite `emyweather`, please
         use:
     
-        Konstantinos Vantas (2018). emyweather: National Meteorological Service Climatic Data, R package version 0.1.0, URL https://github.com/kvantas/emyweather
+        Konstantinos Vantas (2018). emyweather: National Meteorological Service Climatic Data, R package version 0.1.0, URL https://github.com/kvantas/emyweather, DOI http://doi.org/10.5281/zenodo.1159500
     
     A BibTeX entry for LaTeX users is
     
     ``` 
      @Manual{,
-      title = {emyweather: National Meteorological Service Climatic Data},
+      title  = {emyweather: National Meteorological Service Climatic Data},
       author = {Konstantinos Vantas},
-      year = {2018},
-      note = {R package version 0.1.0},
-      url = {https://github.com/kvantas/emyweather},
+      year   = {2018},
+      note   = {R package version 0.1.0},
+      doi    = {10.5281/zenodo.1159500},
+      url    = {https://github.com/kvantas/emyweather},
     }
     ```
 
