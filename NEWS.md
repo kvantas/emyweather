@@ -1,8 +1,12 @@
-# emyweather 0.1.0 (Release date: 2018-01-25)
-
+# emyweather 0.2.0 (Release date: 2018-03-17)
 --------------------------------------------------------------------------------
 
-* Initial submission to CRAN.
+* Convert data sets to tibbles.
+
+# emyweather 0.1.0 (Release date: 2018-01-25)
+--------------------------------------------------------------------------------
+
+* Initial version.
 
 
 

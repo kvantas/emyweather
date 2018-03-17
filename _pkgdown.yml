@@ -1,0 +1,9 @@
+title: emyweather
+
+reference:
+  - title: Datasets
+    desc: The internal datasets of the package
+    contents:
+    - borders
+    - emy_data
+    - emy_stations
