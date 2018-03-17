@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Greek borders � borders • emyweather</title>
+<title>Greek borders — borders • emyweather</title>
 
 <!-- jquery -->
 <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha384-nrOSfDHtoPMzJHjVTdCopGqIqeYETSXhZDFyniQ8ZHcVy08QesyHcnOUpMpqnmWq" crossorigin="anonymous"></script>
@@ -18,13 +18,19 @@
 <!-- Font Awesome icons -->
 <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
 
+<!-- clipboard.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.7.1/clipboard.min.js" integrity="sha384-cV+rhyOuRHc9Ub/91rihWcGmMmCXDeksTtCihMupQHSsi8GIIRDG0ThDc3HGQFJ3" crossorigin="anonymous"></script>
 
 <!-- pkgdown -->
 <link href="../pkgdown.css" rel="stylesheet">
 <script src="../jquery.sticky-kit.min.js"></script>
 <script src="../pkgdown.js"></script>
-  
-  
+<meta property="og:title" content="Greek borders — borders" />
+
+<meta property="og:description" content="The borders of Greece are taken from geodata.gov.gr.  The variables are
+created using the function tidy from the broom package. This data frame
+was created for use with the geom_polygon from ggplot2 package." />
+<meta name="twitter:card" content="summary" />
 <!-- mathjax -->
 <script src='https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>
 
@@ -61,7 +67,7 @@
   <a href="../reference/index.html">Reference</a>
 </li>
 <li>
-  <a href="../news/index.html">News</a>
+  <a href="../news/index.html">Changelog</a>
 </li>
       </ul>
       
@@ -84,10 +90,11 @@
   <div class="col-md-9 contents">
     <div class="page-header">
     <h1>Greek borders</h1>
+    <small>Source: <a href='https:/github.com/kvantas/emyweather/blob/master/R/data.R'><code>R/data.R</code></a></small>
     </div>
 
     
-    <p>The borders of Greece are taken from Geoadata.gov.gr.  The variables are
+    <p>The borders of Greece are taken from geodata.gov.gr.  The variables are
 created using the function tidy from the broom package. This data frame
 was created for use with the geom_polygon from ggplot2 package.</p>
     
@@ -96,7 +103,7 @@ was created for use with the geom_polygon from ggplot2 package.</p>
         
     <h2 class="hasAnchor" id="format"><a class="anchor" href="#format"></a>Format</h2>
 
-    <p>A data frame with 18474 rows and 8 variables:</p><dl class='dl-horizontal'>
+    <p>A tibble with 18474 rows and 8 variables:</p><dl class='dl-horizontal'>
   <dt>long</dt><dd><p>Longitude in decimal degrees, ETRS89</p></dd>
   <dt>lat</dt><dd><p>Latitude in decimal degrees, ETRS89</p></dd>
   <dt>order</dt><dd><p>order, integer</p></dd>
@@ -137,3 +144,4 @@ was created for use with the geom_polygon from ggplot2 package.</p>
 
   </body>
 </html>
+

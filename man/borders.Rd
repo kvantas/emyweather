@@ -4,7 +4,7 @@
 \name{borders}
 \alias{borders}
 \title{Greek borders}
-\format{A data frame with 18474 rows and 8 variables:
+\format{A tibble with 18474 rows and 8 variables:
 \describe{
   \item{long}{Longitude in decimal degrees, ETRS89}
   \item{lat}{Latitude in decimal degrees, ETRS89}
@@ -20,7 +20,7 @@
 borders
 }
 \description{
-The borders of Greece are taken from Geoadata.gov.gr.  The variables are
+The borders of Greece are taken from geodata.gov.gr.  The variables are
 created using the function tidy from the broom package. This data frame
 was created for use with the geom_polygon from ggplot2 package.
 }

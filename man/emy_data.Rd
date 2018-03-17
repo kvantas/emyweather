@@ -4,7 +4,7 @@
 \name{emy_data}
 \alias{emy_data}
 \title{Climatic data from the Greek National Meteorological Service}
-\format{A data frame with 1679308 rows and 13 variables:
+\format{A tibble with 1679308 rows and 13 variables:
 \describe{
   \item{date}{The observation's date}
   \item{station_id}{Greek National Meteorological Service station ID}

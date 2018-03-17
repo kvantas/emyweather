@@ -44,3 +44,10 @@ summary(emy_data)
 ```
 
 Before the use of these data the cleaning from errors is a necessity. The maximum precipitation of 555  mm is obviously an error or a code. 
+
+```{r save_data}
+emy_data <- tibble::as.tibble(emy_data)
+devtools::use_data(emy_data, overwrite = TRUE)
+
+```
+

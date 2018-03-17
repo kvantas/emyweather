@@ -5,7 +5,7 @@
 #' period is from 1975 to 2004. These time series were not checked for
 #' consistency or errors.
 #'
-#' @format A data frame with 1679308 rows and 13 variables:
+#' @format A tibble with 1679308 rows and 13 variables:
 #' \describe{
 #'   \item{date}{The observation's date}
 #'   \item{station_id}{Greek National Meteorological Service station ID}
@@ -30,7 +30,7 @@
 #' Hydrological and Meteorological Information, Hydroscope. The variables are:
 #' stations' id, coordinates, altitude and water division.
 #'
-#' @format A data frame with 21 rows and 7 variables:
+#' @format A tibble with 21 rows and 7 variables:
 #' \describe{
 #'   \item{name}{The station's name}
 #'   \item{station_id}{Greek National Meteorological Service station ID}
@@ -46,11 +46,11 @@
 
 #' Greek borders
 #'
-#' The borders of Greece are taken from Geoadata.gov.gr.  The variables are
+#' The borders of Greece are taken from geodata.gov.gr.  The variables are
 #' created using the function tidy from the broom package. This data frame
 #' was created for use with the geom_polygon from ggplot2 package.
 #'
-#' @format A data frame with 18474 rows and 8 variables:
+#' @format A tibble with 18474 rows and 8 variables:
 #' \describe{
 #'   \item{long}{Longitude in decimal degrees, ETRS89}
 #'   \item{lat}{Latitude in decimal degrees, ETRS89}

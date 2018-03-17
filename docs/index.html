@@ -8,8 +8,13 @@
 <title>Climatic Data from the Greek National Meteorological Service • emyweather</title>
 <!-- jquery --><script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha384-nrOSfDHtoPMzJHjVTdCopGqIqeYETSXhZDFyniQ8ZHcVy08QesyHcnOUpMpqnmWq" crossorigin="anonymous"></script><!-- Bootstrap --><link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script><!-- Font Awesome icons --><link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
-<!-- pkgdown --><link href="pkgdown.css" rel="stylesheet">
-<script src="jquery.sticky-kit.min.js"></script><script src="pkgdown.js"></script><!-- mathjax --><script src="https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script><!--[if lt IE 9]>
+<!-- clipboard.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.7.1/clipboard.min.js" integrity="sha384-cV+rhyOuRHc9Ub/91rihWcGmMmCXDeksTtCihMupQHSsi8GIIRDG0ThDc3HGQFJ3" crossorigin="anonymous"></script><!-- pkgdown --><link href="pkgdown.css" rel="stylesheet">
+<script src="jquery.sticky-kit.min.js"></script><script src="pkgdown.js"></script><meta property="og:title" content="Climatic Data from the Greek National Meteorological Service">
+<meta property="og:description" content="Data sets that contain climatic data from the Greek National 
+    Meteorological Service. The climatic data come from 21 weather stations, 
+    with a time step of 3 hours. The time period is from 1975 to 2004.">
+<meta name="twitter:card" content="summary">
+<!-- mathjax --><script src="https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script><!--[if lt IE 9]>
 <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
 <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 <![endif]-->
@@ -38,7 +43,7 @@
   <a href="reference/index.html">Reference</a>
 </li>
 <li>
-  <a href="news/index.html">News</a>
+  <a href="news/index.html">Changelog</a>
 </li>
       </ul>
 <ul class="nav navbar-nav navbar-right">
@@ -65,22 +70,23 @@
     
 <div class="contents">
 <!-- README.md is generated from README.Rmd. Please edit that file -->
-<section id="emyweather" class="level1"><div class="page-header"><h1>emyweather</h1></div>
+<div id="emyweather" class="section level1">
+<div class="page-header"><h1 class="hasAnchor">
+<a href="#emyweather" class="anchor"></a>emyweather</h1></div>
 
-<p>This package contains climatic data from the Greek National Meteorological Service, as well as a number of useful other related data sets.</p>
-<p>The climatic data come from 21 weather stations, with a time step of 3 hours. The time period is from 1975 to 2004.</p>
-<p><img src="./man/figures/stations_map.png"></p>
-<p>The variables are: air pressure, temperature (dry, wet, max and min), relative humidity, wind (direction and speed), visibility, total cloud amount and precipitation. These time series are not checked for consistency or errors.</p>
-<section id="data-sources" class="level2"><h2>Data sources</h2>
-<ul>
-<li>National Meteorological Service <a href="http://www.emy.gr/" class="uri">http://www.emy.gr/</a>
-</li>
-</ul></section><section id="installation" class="level2"><h2>Installation</h2>
+<p><code>emyweather</code> is an R package that contains climatic data from the <a href="http://emy.gr">Greek National Meteorological Service</a>, as well as a number of useful other related data sets. The climatic data come from 21 weather stations, with a time step of 3 hours and the time period is from 1975 to 2004. For more details checkout the package’s <a href="https://kvantas.github.io/emyweather/">website</a>.</p>
+<p><img src="https://github.com/kvantas/emyweather/raw/master/man/figures/stations_map.png" align="center"></p>
+<div id="installation" class="section level2">
+<h2 class="hasAnchor">
+<a href="#installation" class="anchor"></a>Installation</h2>
 <p>You can install emyweather from github with:</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb1-1" data-line-number="1"><span class="co"># install.packages("devtools")</span></a>
-<a class="sourceLine" id="cb1-2" data-line-number="2">devtools<span class="op">::</span><span class="kw"><a href="http://www.rdocumentation.org/packages/devtools/topics/install_github">install_github</a></span>(<span class="st">"kvantas/emyweather"</span>)</a></code></pre></div>
-</section><section id="using-emyweather" class="level2"><h2>Using emyweather</h2>
-<p>This package contains three data sets:</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co"># install.packages("devtools")</span>
+devtools<span class="op">::</span><span class="kw"><a href="http://www.rdocumentation.org/packages/devtools/topics/install_github">install_github</a></span>(<span class="st">"kvantas/emyweather"</span>)</code></pre></div>
+</div>
+<div id="using-emyweather" class="section level2">
+<h2 class="hasAnchor">
+<a href="#using-emyweather" class="anchor"></a>Using emyweather</h2>
+<p>This package is comprised of three data sets:</p>
 <ul>
 <li>
 <code>emy_data</code>: climatic measurements</li>
@@ -88,7 +94,126 @@
 <code>emy_stations</code>: weather stations’ coordinates and elevation</li>
 <li>
 <code>borders</code>: borders of Greece</li>
-</ul></section><section id="meta" class="level2"><h2>Meta</h2>
+</ul>
+<div id="emy_data" class="section level3">
+<h3 class="hasAnchor">
+<a href="#emy_data" class="anchor"></a><code>emy_data</code>
+</h3>
+<p>The variables in this data set are:</p>
+<table class="table">
+<thead><tr class="header">
+<th>Variable</th>
+<th>Description</th>
+</tr></thead>
+<tbody>
+<tr class="odd">
+<td>date</td>
+<td>The observation’s date</td>
+</tr>
+<tr class="even">
+<td>station_id</td>
+<td>Greek National Meteorological Service station ID</td>
+</tr>
+<tr class="odd">
+<td>pressure</td>
+<td>Pressure, in hPa</td>
+</tr>
+<tr class="even">
+<td>dry_temp</td>
+<td>Dry temperature, in degree Celsius</td>
+</tr>
+<tr class="odd">
+<td>wet_temp</td>
+<td>Wet temperature, in degree Celsius</td>
+</tr>
+<tr class="even">
+<td>max_temp</td>
+<td>Maximum temperature, in degree Celsius</td>
+</tr>
+<tr class="odd">
+<td>min_temp</td>
+<td>Minimum temperature, in degree Celsius</td>
+</tr>
+<tr class="even">
+<td>rel_humidity</td>
+<td>Relative humidity, in percent</td>
+</tr>
+<tr class="odd">
+<td>wind_direction</td>
+<td>Wind direction, in degrees</td>
+</tr>
+<tr class="even">
+<td>wind_force_knot</td>
+<td>Wind force, in knots</td>
+</tr>
+<tr class="odd">
+<td>visibility</td>
+<td>Visibility, in km</td>
+</tr>
+<tr class="even">
+<td>total_cloud_amount</td>
+<td>Total cloud amount, in values 0 to 9</td>
+</tr>
+<tr class="odd">
+<td>precipitation</td>
+<td>Precipitation height, in mm</td>
+</tr>
+</tbody>
+</table>
+<p>Please note that these time series are not checked for consistency or errors.</p>
+</div>
+<div id="emy_stations" class="section level3">
+<h3 class="hasAnchor">
+<a href="#emy_stations" class="anchor"></a><code>emy_stations</code>
+</h3>
+<p>The stations’ data are taken from the Greek National Data Bank for Hydrological and Meteorological Information, <a href="http://www.hydroscope.gr/">Hydroscope</a> using the package <a href="https://github.com/ropensci/hydroscoper/blob/master/vignettes/intro_hydroscoper.Rmd"><code>hydroscoper</code></a>. The variables are:</p>
+<table class="table">
+<thead><tr class="header">
+<th>Variable</th>
+<th>Description</th>
+</tr></thead>
+<tbody>
+<tr class="odd">
+<td>name</td>
+<td>The station’s name</td>
+</tr>
+<tr class="even">
+<td>station_id</td>
+<td>Greek National Meteorological Service station ID</td>
+</tr>
+<tr class="odd">
+<td>hydroscope_id</td>
+<td>The station’s ID from kyy.hydroscope.gr database</td>
+</tr>
+<tr class="even">
+<td>water_division</td>
+<td>The station’s Water Division</td>
+</tr>
+<tr class="odd">
+<td>longitude</td>
+<td>The station’s longitude in decimal degrees, ETRS89</td>
+</tr>
+<tr class="even">
+<td>latitude</td>
+<td>The station’s latitude in decimal degrees, ETRS89</td>
+</tr>
+<tr class="odd">
+<td>altitude</td>
+<td>The station’s altitude, meters above sea level</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="borders" class="section level3">
+<h3 class="hasAnchor">
+<a href="#borders" class="anchor"></a><code>borders</code>
+</h3>
+<p>The borders of Greece are taken from Geoadata.gov.gr. The variables are created using the function <code>tidy</code> from the <a href="https://cran.r-project.org/web/packages/broom/index.html"><code>broom</code></a> package for use with <code>geom_polygon</code> from <a href="https://cran.r-project.org/web/packages/ggplot2/"><code>ggplot2</code></a>.</p>
+</div>
+</div>
+<div id="meta" class="section level2">
+<h2 class="hasAnchor">
+<a href="#meta" class="anchor"></a>Meta</h2>
 <ul>
 <li>Please <a href="https://github.com/kvantas/emyweather/issues">report any issues or bugs</a>.</li>
 <li>Licence:
@@ -100,20 +225,25 @@
 <li>
 <p>To cite <code>emyweather</code>, please use:</p>
 <pre><code>Konstantinos Vantas (2018). emyweather: National Meteorological Service Climatic Data, R package version 0.1.0, URL https://github.com/kvantas/emyweather, DOI http://doi.org/10.5281/zenodo.1159500</code></pre>
-<p>A BibTeX entry for LaTeX users is</p>
-<pre><code> @Manual{,
-  title  = {emyweather: National Meteorological Service Climatic Data},
-  author = {Konstantinos Vantas},
-  year   = {2018},
-  note   = {R package version 0.1.0},
-  doi    = {10.5281/zenodo.1159500},
-  url    = {https://github.com/kvantas/emyweather},
-}</code></pre>
+<p>A BibTeX entry for LaTeX users is:</p>
+<pre><code>@Manual{vantas2018e,
+title  = {emyweather: National Meteorological Service Climatic Data},
+author = {Konstantinos Vantas},
+year   = {2018},
+note   = {R package version 0.1.0},
+doi    = {10.5281/zenodo.1159500},
+url    = {https://github.com/kvantas/emyweather},
+  }</code></pre>
 </li>
-<li><p>Please note that this project is released with a <a href="/CONDUCT.md">Contributor Code of Conduct</a>. By participating in this project you agree to abide by its terms.</p></li>
-</ul></section><section id="references" class="level2"><h2>References</h2>
-<p><a href="http://www.emy.gr/">National Meteorological Service</a></p>
-</section></section>
+<li><p>Please note that this project is released with a <a href="/CONDUCT.html">Contributor Code of Conduct</a>. By participating in this project you agree to abide by its terms.</p></li>
+</ul>
+</div>
+<div id="references" class="section level2">
+<h2 class="hasAnchor">
+<a href="#references" class="anchor"></a>References</h2>
+<p><a href="http://www.emy.gr/">National Meteorological Service</a> <a href="http://geodata.gov.gr/">GEODATA.gov.gr</a></p>
+</div>
+</div>
 </div>
   </div>
 
@@ -127,11 +257,10 @@
 </li>
 </ul>
 <h2>License</h2>
-<p><a href="https://opensource.org/licenses/mit-license.php">MIT</a> + file <a href="LICENSE.html">LICENSE</a></p>
+<p><a href="https://opensource.org/licenses/mit-license.php">MIT</a> + file <a href="LICENSE-text.html">LICENSE</a></p>
 <h2>Developers</h2>
 <ul class="list-unstyled">
-<li>Konstantinos Vantas <br><small class="roles"> Author, maintainer </small> <br><small>(0000-0001-6387-8791)</small>
-</li>
+<li>Konstantinos Vantas <br><small class="roles"> Author, maintainer </small> <a href="https://orcid.org/0000-0001-6387-8791" target="orcid.widget"><img src="https://members.orcid.org/sites/default/files/vector_iD_icon.svg" class="orcid"></a> </li>
 </ul>
 <h2>Dev status</h2>
 <ul class="list-unstyled">

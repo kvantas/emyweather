@@ -4,7 +4,7 @@
 \name{emy_stations}
 \alias{emy_stations}
 \title{Greek National Meteorological Service Stations}
-\format{A data frame with 21 rows and 7 variables:
+\format{A tibble with 21 rows and 7 variables:
 \describe{
   \item{name}{The station's name}
   \item{station_id}{Greek National Meteorological Service station ID}

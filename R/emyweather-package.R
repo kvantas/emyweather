@@ -19,12 +19,19 @@
 #' Hydrological and Meteorological Information, Hydroscope. The variables are:
 #' stations' id, coordinates, altitude and water division.
 #'
+#' @section Borders of Greece:
+#'
+#' The variables are created using the function \code{tidy} from the
+#' \code{broom} package for use with the \code{ggplot2} package.
+#'
 #' @section Data Sources:
 #'
 #' The data are retrieved from:
-#'  \url{http://www.meteo.gr/}
-#'  \url{http://www.hydroscope.gr/}
-#'
+#' \itemize{
+#'  \item \href{http://www.emy.gr}{Greek National Meteorological Service}
+#'  \item \href{http://www.hydroscope.gr/}{Hydroscope}
+#'  \item \href{http://geodata.gov.gr/}{GEODATA.gov.gr}
+#' }
 #' @name emyweather
 #' @aliases emyweather-package
 #' @docType package

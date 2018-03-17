@@ -51,4 +51,5 @@ p+
   labs(x = "Longitude", y = "Latitude")
 
 # save data
+borders <- tibble::as.tibble(borders)
 devtools::use_data(borders, overwrite = TRUE)

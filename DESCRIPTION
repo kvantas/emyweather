@@ -1,15 +1,14 @@
 Package: emyweather
 Type: Package
-Title: Climatic Data from the Greek National Meteorological Service
-Version: 0.1.0
+Title: Open climatic data from the Greek National Meteorological Service
+Version: 0.2.0
 Authors@R: person("Konstantinos", "Vantas", role = c("aut", "cre"),
   email = "kon.vantas@gmail.com",
   comment = c(ORCID = "0000-0001-6387-8791"))
 Maintainer: Konstantinos Vantas <kon.vantas@gmail.com>
-Description: This package contains climatic data from the Greek National 
-    Meteorological Service, as well as a number of useful other related data 
-    sets. The climatic data come from 21 weather stations, with a time step of 
-    3 hours. The time period is from 1975 to 2004.
+Description: Data sets that contain climatic data from the Greek National 
+    Meteorological Service. The climatic data come from 21 weather stations, 
+    with a time step of 3 hours. The time period is from 1975 to 2004.
 URL: https://github.com/kvantas/emyweather
 BugReports: https://github.com/kvantas/emyweather/issues             
 Depends: R (>= 3.4.0)
@@ -17,4 +16,10 @@ License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
 RoxygenNote: 6.0.1
-Suggests: ggplot2
+Imports: tibble(>= 1.4.2)
+Suggests: 
+    ggplot2 (>= 2.2.1),
+    knitr (>= 1.20),
+    hydroscoper (>= 1.0),
+    rmarkdown (>= 1.9)
+VignetteBuilder: knitr
