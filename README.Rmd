@@ -86,23 +86,26 @@ The borders of Greece are taken from Geoadata.gov.gr.  The variables are created
 * Licence:
     + All code is licensed MIT.
     + All data are from the open data sources in http://www.emy.gr/.
-* To cite `emyweather`, please use:
+* To cite `emyweather` in publications, please use:
 ```
-Konstantinos Vantas (2018). emyweather: National Meteorological Service Climatic Data, R package version 0.1.0, URL https://github.com/kvantas/emyweather, DOI http://doi.org/10.5281/zenodo.1159500
+  Vantas, (2018). emyweather: R package with open climatic data from the Greek National
+  Meteorological Service, URL: https://github.com/kvantas/emyweather,
+  DOI:http://doi.org/10.5281/zenodo.1159500
 ```
-A BibTeX entry for LaTeX users is:
+A BibTeX entry for LaTeX users is
 ```
-@Manual{vantas2018e,
-    title  = {emyweather: National Meteorological Service Climatic Data},
+@Manual{ vantas2018emy,
     author = {Konstantinos Vantas},
-    year   = {2018},
-    note   = {R package version 0.1.0},
-    doi    = {10.5281/zenodo.1159500},
-    url    = {https://github.com/kvantas/emyweather},
+    title = {{emyweather}: R package with open climatic data from the Greek National Meteorological Service},
+    doi = {10.5281/zenodo.1159500},
+    year = {2018},
+    note = {R package version 0.2.0},
+    url = {https://github.com/kvantas/emyweather},
   }
 ```
 * Please note that this project is released with a [Contributor Code of Conduct](/CONDUCT.md). By participating in this project you agree to abide by its terms.
 
 ## References
-[National Meteorological Service](http://www.emy.gr/)
-[GEODATA.gov.gr](http://geodata.gov.gr/)
+ * [GEODATA.gov.gr](http://geodata.gov.gr/)
+ * [Hydroscope](http://www.hydroscope.gr/)
+ * [National Meteorological Service](http://www.emy.gr/)
